@@ -50,18 +50,18 @@ public class Step2_RotatingPiecesOfBlocksTest extends Assert {
                     "...\n", piece.toString());
         }
 
-        /*@Test
+        @Test
         public void can_be_rotated_left() {
             piece = piece.rotateLeft();
             assertEquals("" +
                     "...\n" +
                     "XX.\n" +
                     "...\n", piece.toString());
-        }*/
+        }
     }
 
     
-/*
+
     public class A_piece_of_5x5_blocks {
 
         @Before
@@ -84,27 +84,27 @@ public class Step2_RotatingPiecesOfBlocksTest extends Assert {
                     ".....\n", piece.toString());
         }
 
-//        @Test
-//        public void can_be_rotated_right() {
-//            piece = piece.rotateRight();
-//            assertEquals("" +
-//                    ".....\n" +
-//                    ".....\n" +
-//                    "..XXX\n" +
-//                    "...XX\n" +
-//                    "....X\n", piece.toString());
-//        }
+        @Test
+        public void can_be_rotated_right() {
+            piece = piece.rotateRight();
+            assertEquals("" +
+                    ".....\n" +
+                    ".....\n" +
+                    "..XXX\n" +
+                    "...XX\n" +
+                    "....X\n", piece.toString());
+        }
 
-//        @Test
-//        public void can_be_rotated_left() {
-//            piece = piece.rotateLeft();
-//            assertEquals("" +
-//                    "X....\n" +
-//                    "XX...\n" +
-//                    "XXX..\n" +
-//                    ".....\n" +
-//                    ".....\n", piece.toString());
-//        }
+        @Test
+        public void can_be_rotated_left() {
+            piece = piece.rotateLeft();
+            assertEquals("" +
+                    "X....\n" +
+                    "XX...\n" +
+                    "XXX..\n" +
+                    ".....\n" +
+                    ".....\n", piece.toString());
+        }
     }
-*/
+
 }
