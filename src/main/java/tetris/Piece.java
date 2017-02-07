@@ -45,7 +45,7 @@ public class Piece {
 		char[][] newPieceCharArray = new char[n][n];
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				newPieceCharArray[i][j] = shape[j][i];
+				newPieceCharArray[i][j] = shape[j][(n-1) - i];
 			}
 		}
 		return new Piece(newPieceCharArray);
