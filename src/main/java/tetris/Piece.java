@@ -2,8 +2,7 @@ package tetris;
 
 public class Piece {
 
-	private String shape;
-	private char[][] piece;
+	private char[][] shape;
 	private int n;
 
 	public Piece(String shape) {
@@ -24,14 +23,39 @@ public class Piece {
 			}
 			i++;
 		}
-		this.piece = piece;
+		this.shape = piece;
+	}
+	
+	public Piece(char[][] shape) {
+		this.shape = shape;
+		this.n = shape.length;
+	}
+	
+	public Piece rotateRight() {
+		char[][] newPieceCharArray = new char[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				newPieceCharArray[j][(n-1) - i] = shape[i][j];
+			}
+		}
+		return new Piece(newPieceCharArray);
+	}
+	
+	public Piece rotateLeft() {
+		char[][] newPieceCharArray = new char[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				newPieceCharArray[i][j] = shape[j][i];
+			}
+		}
+		return new Piece(newPieceCharArray);
 	}
 	
 	public String toString() {
         StringBuffer s = new StringBuffer();
         for (int i = 0; i < n; i++) {
         	for(int j = 0; j < n; j++) {
-        		s.append(piece[i][j]);
+        		s.append(shape[i][j]);
         	}
         	s.append("\n");
         }
