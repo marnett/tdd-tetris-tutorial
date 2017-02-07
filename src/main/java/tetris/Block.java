@@ -2,17 +2,17 @@ package tetris;
 
 public class Block {
 
-	private char shape;
+	private char letter;
 
 	public Block(char shape) {
-        this.shape = shape;
+        this.letter = shape;
     }
 
-	public char getShape() {
-		return this.shape;
+	public char getLetter() {
+		return this.letter;
 	}
 	
-	public void setShape(char shape) {
-		this.shape = shape;
+	public void setLetter(char shape) {
+		this.letter = shape;
 	}
 }

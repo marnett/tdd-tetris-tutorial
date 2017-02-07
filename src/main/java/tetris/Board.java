@@ -38,7 +38,7 @@ public class Board {
 			hasFalling = true;
 			currRow = 0;
 			currCol = 1;
-			board[currRow][currCol] = block.getShape();
+			board[currRow][currCol] = block.getLetter();
 		}
 	}
 	
