@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
 /**
  * @author Esko Luontola
  */
-@Ignore("contains no test")
 @RunWith(NestedJUnit.class)
 public class Step3_RotatingTetrominoesTest extends Assert {
 
@@ -20,7 +19,7 @@ public class Step3_RotatingTetrominoesTest extends Assert {
     // - See README for how "Tetromino" is different from "Piece"
     // - Next step: FallingPiecesTest
 
-/*
+
     private Tetromino shape;
 
 
@@ -40,9 +39,9 @@ public class Step3_RotatingTetrominoesTest extends Assert {
             assertEquals(original, shape.toString());
         }
     }
-*/
 
-/*
+
+
     public class The_T_shape {
 
         @Before
@@ -58,24 +57,24 @@ public class Step3_RotatingTetrominoesTest extends Assert {
                     "...\n", shape.toString());
         }
 
-//        @Test
-//        public void can_be_rotated_right_3_times() {
-//            shape = shape.rotateRight();
-//            assertEquals("" +
-//                    ".T.\n" +
-//                    ".TT\n" +
-//                    ".T.\n", shape.toString());
-//            shape = shape.rotateRight();
-//            assertEquals("" +
-//                    "...\n" +
-//                    "TTT\n" +
-//                    ".T.\n", shape.toString());
-//            shape = shape.rotateRight();
-//            assertEquals("" +
-//                    ".T.\n" +
-//                    "TT.\n" +
-//                    ".T.\n", shape.toString());
-//        }
+        @Test
+        public void can_be_rotated_right_3_times() {
+            shape = shape.rotateRight();
+            assertEquals("" +
+                    ".T.\n" +
+                    ".TT\n" +
+                    ".T.\n", shape.toString());
+            shape = shape.rotateRight();
+            assertEquals("" +
+                    "...\n" +
+                    "TTT\n" +
+                    ".T.\n", shape.toString());
+            shape = shape.rotateRight();
+            assertEquals("" +
+                    ".T.\n" +
+                    "TT.\n" +
+                    ".T.\n", shape.toString());
+        }
 
 //        @Test
 //        public void can_be_rotated_left_3_times() {
@@ -105,7 +104,7 @@ public class Step3_RotatingTetrominoesTest extends Assert {
 //            assertEquals(originalShape, shape.toString());
 //        }
     }
-*/
+
 
 /*
     public class The_I_shape {
