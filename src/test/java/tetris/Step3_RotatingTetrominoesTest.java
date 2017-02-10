@@ -106,7 +106,7 @@ public class Step3_RotatingTetrominoesTest extends Assert {
     }
 
 
-/*
+
     public class The_I_shape {
 
         @Before
@@ -124,40 +124,42 @@ public class Step3_RotatingTetrominoesTest extends Assert {
                     ".....\n", shape.toString());
         }
 
-//        @Test
-//        public void can_be_rotated_right_once() {
-//            shape = shape.rotateRight();
-//            assertEquals("" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    ".....\n", shape.toString());
-//        }
+        @Test
+        public void can_be_rotated_right_once() {
+            shape = shape.rotateRight();
+            assertEquals("" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    ".....\n", shape.toString());
+        }
 
-//        @Test
-//        public void can_be_rotated_left_once() {
-//            shape = shape.rotateLeft();
-//            assertEquals("" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    "..I..\n" +
-//                    ".....\n", shape.toString());
-//        }
+        @Ignore
+        @Test
+        public void can_be_rotated_left_once() {
+            shape = shape.rotateLeft();
+            assertEquals("" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    "..I..\n" +
+                    ".....\n", shape.toString());
+        }
 
-//        @Test
-//        public void rotating_it_twice_will_get_back_to_the_original_shape() {
-//            String originalShape = shape.toString();
-//            shape = shape.rotateRight().rotateRight();
-//            assertEquals(originalShape, shape.toString());
-//            shape = shape.rotateLeft().rotateLeft();
-//            assertEquals(originalShape, shape.toString());
-//        }
+        @Ignore
+        @Test
+        public void rotating_it_twice_will_get_back_to_the_original_shape() {
+            String originalShape = shape.toString();
+            shape = shape.rotateRight().rotateRight();
+            assertEquals(originalShape, shape.toString());
+            shape = shape.rotateLeft().rotateLeft();
+            assertEquals(originalShape, shape.toString());
+        }
     }
-*/
 
-/*
+
+    
     public class The_O_shape {
 
         @Before
@@ -173,23 +175,25 @@ public class Step3_RotatingTetrominoesTest extends Assert {
                     "...\n", shape.toString());
         }
 
-//        @Test
-//        public void cannot_be_rotated_right() {
-//            shape = shape.rotateRight();
-//            assertEquals("" +
-//                    ".OO\n" +
-//                    ".OO\n" +
-//                    "...\n", shape.toString());
-//        }
+        @Ignore
+        @Test
+        public void cannot_be_rotated_right() {
+            shape = shape.rotateRight();
+            assertEquals("" +
+                    ".OO\n" +
+                    ".OO\n" +
+                    "...\n", shape.toString());
+        }
 
-//        @Test
-//        public void cannot_be_rotated_left() {
-//            shape = shape.rotateLeft();
-//            assertEquals("" +
-//                    ".OO\n" +
-//                    ".OO\n" +
-//                    "...\n", shape.toString());
-//        }
+        @Ignore
+        @Test
+        public void cannot_be_rotated_left() {
+            shape = shape.rotateLeft();
+            assertEquals("" +
+                    ".OO\n" +
+                    ".OO\n" +
+                    "...\n", shape.toString());
+        }
     }
-*/
+
 }
